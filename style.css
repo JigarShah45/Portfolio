@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+    background-color: #fff;
+    transition: 0.5s;
+
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+header .logo{
+    color: #333;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header ul{
+    display: flex;
+    gap: 40px;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #333;
+    transition: 0.5s;
+}
+
+.content{
+    position: relative;
+    max-width: 600px;
+}
+
+.content h2{
+    font-size: 5.5em;
+    color: #333;
+    transition: 0.5s;
+}
+
+.content h2 span{
+    color: orange;
+    transition: 0.5s;
+}
+
+.content p{
+    font-size: 1.2em;
+    color: #666;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.content button{
+    position: relative;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-right: 20px;
+    font-size: 1.20em;
+    letter-spacing: 0.05em;
+    background-color: orange ;
+    color: #fff;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.content button.chat{
+    background: transparent;
+    color: #333;
+}
+
+.dayNight{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 2em;
+}
+/* .banner ion-icon:nth-child(2),
+.banner.night .dayNight ion-icon:nth-child(1){
+    display: none;
+}
+.banner.night .banner ion-icon:nth-child(2){
+    display: block;
+}
+.banner.night{
+    background: #333;
+}
+.banner.night .dayNight{
+    color: #fff;
+    background: #444;
+} */
+
+.dayNight ion-icon:nth-child(2) {
+    display: none;
+}
+
+.banner.night .dayNight ion-icon:nth-child(1) {
+    display: none;
+}
+
+.banner.night .dayNight ion-icon:nth-child(2) {
+    display: block;
+}
+
+.banner.night {
+    background: #333;
+}
+
+.banner.night .dayNight {
+    color: #fff;
+    background: #444;
+}
+
+
+.banner.night header .logo,
+.banner.night .content h2,
+.banner.night .content p,
+.banner.night .content button.chat,
+.banner.night header ul li a{
+    color: #fff;
+}
